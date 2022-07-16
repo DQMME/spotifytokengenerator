@@ -40,8 +40,12 @@ kotlin {
                 implementation("io.ktor:ktor-server-content-negotiation:$ktorVersion")
                 implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
                 implementation("io.ktor:ktor-server-cors:$ktorVersion")
+                implementation("io.ktor:ktor-client-core:$ktorVersion")
+                implementation("io.ktor:ktor-client-cio:$ktorVersion")
+                implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
                 implementation("ch.qos.logback:logback-classic:$logbackVersion")
                 implementation("org.litote.kmongo:kmongo-coroutine-serialization:$kmongoVersion")
+                implementation("dev.schlaubi:stdx-full:1.2.1")
             }
         }
 
