@@ -10,6 +10,7 @@ import org.w3c.dom.url.URLSearchParams
 import react.FC
 import react.Props
 import react.dom.html.InputType
+import react.dom.html.ReactHTML.b
 import react.dom.html.ReactHTML.br
 import react.dom.html.ReactHTML.button
 import react.dom.html.ReactHTML.h1
@@ -32,6 +33,9 @@ val app = FC<Props> {
 
     p {
         +"This generator can be used to generate Access and Refresh Tokens for the Spotify Web API. You can simply select the scopes you want and click \"Generate\". You will be redirect to the twitch authorize page and after logging in you will see the Tokens in the fields below. You should only use this tokens for testing. For production you should use your own tokens."
+        b {
+            +"This site is in not affiliated with Spotify. It's an inofficial tool for developers."
+        }
     }
 
     hr {}
